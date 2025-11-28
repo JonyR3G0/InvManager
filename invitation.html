@@ -1,0 +1,80 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body
+  style="
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #000957;
+    background-image: url(https://raw.githubusercontent.com/JonyR3G0/front-end-m1/refs/heads/master/CARD%20FONDO.png);
+    border-radius: 45px;
+    box-sizing: border-box;
+    width: 700;
+    height: 900;
+  "
+>
+  <main>
+    <h1
+      style="
+        color: #FFFFFF;
+        font-family: Alex Brush, Sans-serif, arial;
+        font-size: 100px;
+        display: inline-block;
+        margin: 0;
+        font-weight: lighter;
+      "
+    >
+      Ohana❄️
+    </h1>
+    <p
+      style="
+        font-size: 15px;
+        font-family: Sans-serif, arial;
+        color: rgba(255, 255, 255, 1);
+      "
+    >
+      ¡Hola, ${nombre}! Gracias por comprar tu boleto. Aquí tienes tu código QR
+      para acceder al recital:
+    </p>
+    <figure
+      style="
+        padding: 30px;
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, 1);
+        font-family: Unica One, sans-serif, arial;
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        display: inline-block;
+        margin: 0;
+      "
+    >
+      <img src="${qrUrl}" alt="Permite la visualizacion de imagenes" />
+      <figcaption style="padding: 35px 0 15px 0">
+        Muestra este código al ingresar.
+      </figcaption>
+    </figure>
+  </main>
+
+  <footer style="font-size: 12px; color: #aaa">
+    <p>
+      Si no carga el qr, de click a este enlace para descargarlo:
+      https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(contenidoQR)}&size=500x500
+      Este correo fue generado automáticamente, para cualquier aclaracion
+      comunicarse al 322 211 3229.
+    </p>
+  </footer>
+</body>
